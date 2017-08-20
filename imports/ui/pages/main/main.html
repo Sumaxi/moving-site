@@ -1,0 +1,199 @@
+<template name="App_main">
+    <body id="page-top">
+
+        <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand page-scroll" href="#page-top">Start Tour</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a class="page-scroll" href="#download">Front</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#features">Kitchen</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#contact">Living</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-7">
+                        <div class="header-content">
+                            <div class="header-content-inner">
+                                <h1>22 Lancaster Lane</h1>
+                                <a href="#download" class="btn btn-outline btn-xl page-scroll">Start Tour</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="device-container">
+                            <div class="device-mockup iphone6_plus portrait white">
+                                <div class="device">
+                                    <div class="screen">
+                                        <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+                                        <img src="img/22-front2.JPG" class="img-responsive" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section id="download" class="download bg-primary text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h2 class="section-heading">Front</h2>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="virgo">
+                            <iframe src="https://www.virgo360.com/embed/tBimBukNS2tShmvNq" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <div class="section-heading">
+                            <h2>Kitchen</h2>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <!-- <img src="img/demo-screen-1.jpg" class="img-responsive" alt=""> -->
+                        <div class="virgo">
+                            <iframe src="https://www.virgo360.com/embed/tBimBukNS2tShmvNq" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="feature-item">
+                                        <i class="icon-screen-smartphone text-primary"></i>
+                                        <h3>Microwares</h3>
+                                        <p class="text-muted">We've got microwaves babee</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="feature-item">
+                                        <i class="icon-camera text-primary"></i>
+                                        <h3>Washing Machine</h3>
+                                        <p class="text-muted">Mama yells at stas, who yells at me ( if visisble ) or does it himself ( if not )</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="cta-content">
+                <div class="container">
+                    <h2>Don't wait,<br>Contact us</h2>
+                    <a href="#contact" class="btn btn-outline btn-xl page-scroll">Contact!</a>
+                </div>
+            </div>
+            <div class="overlay"></div>
+        </section>
+
+        <section id="contact" class="contact bg-primary">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2>We would <i class="fa fa-heart"><span class="glyphicon glyphicon-heart"></span></i> to chat!</h2>
+                    </div>
+                </div>
+                <div class="row justify-content-md-center">
+                    <div class="col-sm-offset-3 col-sm-6">
+                        {{> contact}}
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <p>&copy; 2016 Start Bootstrap. All Rights Reserved.</p>
+                <ul class="list-inline">
+                    <li>
+                        <a href="#">Privacy</a>
+                    </li>
+                    <li>
+                        <a href="#">Terms</a>
+                    </li>
+                    <li>
+                        <a href="#">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+
+        <!-- Plugin JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+        
+        <script>
+            (function($) {
+                "use strict"; // Start of use strict
+
+                // jQuery for page scrolling feature - requires jQuery Easing plugin
+                $(document).on('click', 'a.page-scroll', function(event) {
+                    var $anchor = $(this);
+                    $('html, body').stop().animate({
+                        scrollTop: ($($anchor.attr('href')).offset().top - 50)
+                    }, 1250, 'easeInOutExpo');
+                    event.preventDefault();
+                });
+
+                // Highlight the top nav as scrolling occurs
+                $('body').scrollspy({
+                    target: '.navbar-fixed-top',
+                    offset: 100
+                });
+
+                // Closes the Responsive Menu on Menu Item Click
+                $('.navbar-collapse ul li a').click(function() {
+                    $('.navbar-toggle:visible').click();
+                });
+
+                // Offset for Main Navigation
+                $('#mainNav').affix({
+                    offset: {
+                        top: 50
+                    }
+                })
+
+            })(jQuery); // End of use strict
+        </script>
+    </body>
+</template>
